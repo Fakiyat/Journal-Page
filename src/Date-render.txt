@@ -1,0 +1,52 @@
+// Use of props this is the examplr of reusablity in react using javascript function
+
+import ReactDOM from "react-dom/client";
+
+// function App() {
+//   const firstName = "Fakiyat";
+//   const lastName = "Afaq";
+
+//   return (
+//     <h1>
+//       hello {firstName} {lastName}
+//     </h1>
+//   );
+// }
+
+// this below function are used to render the date function =  const hours = new Date().getHours() % 12; for 12hours %12 and for 24hours %24
+// function App() {
+//   const hours = new Date().getHours();
+
+//   return <h1>hello {hours}</h1>;
+// }
+// function App() {
+//   const date = new Date().getDate();
+//   const month = new Date().getMonth();
+//   const year = new Date().getFullYear();
+//   const hours = new Date().getHours();
+//   const minutes = new Date().getMinutes();
+//   const seconds = new Date().getMilliseconds();
+
+//   return (
+//     <h1>
+//       Welecome to {date}/{month}/{year} at time {hours}:{minutes}:{seconds}
+//     </h1>
+//   );
+// }
+function App() {
+  const hours = new Date().getHours();
+
+  let timeofDay;
+  if (hours < 12) {
+    timeofDay = "Morning";
+  } else if (hours >= 12 && hours < 17) {
+    timeofDay = "AfterNoon";
+  } else if (hours >= 17 && hours < 21) {
+    timeofDay = "Evening";
+  } else if (hours >= 21) {
+    timeofDay = "Night";
+  }
+  return <h1>Your are Rendering this At {timeofDay}</h1>;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);

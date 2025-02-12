@@ -1,0 +1,174 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* 🌍 Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* 🎨 Animated Gradient Background */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🌙 Dark Mode */
+body.dark-mode {
+  background: linear-gradient(-45deg, #141e30, #243b55);
+  color: white; /* Ensures text is visible */
+}
+body.dark-mode .journal-entry {
+  background: rgba(255, 255, 255, 0.1); /* Slight transparent white */
+  color: #fff; /* Ensures text is visible */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+body.dark-mode .location {
+  color: #f3a683; /* Light color for better contrast */
+}
+
+body.dark-mode .location:hover {
+  color: #ffb400;
+}
+/* 🔘 Dark Mode Toggle Button */
+.toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #222;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.toggle-mode:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* 📌 Header */
+header {
+  background: rgba(255, 85, 85, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 55px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📖 Journal Entry */
+.journal-entry {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(30px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* 🖼️ Image & Content */
+.main-image-containor {
+  width: 130px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info-containor {
+  flex: 1;
+}
+
+/* 🗺️ Location & Marker */
+.marker {
+  width: 12px;
+  margin-right: 8px;
+}
+
+.country {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #f55a5a;
+}
+
+.location {
+  color: #5037cf;
+  margin-left: 14px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.location:hover {
+  color: #f55a5a;
+}
+
+/* 🔥 Entry Card Hover Effect */
+.journal-entry:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Scroll Animation */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .journal-entry {
+    flex-direction: column;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .main-image-containor {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .info-containor {
+    width: 100%;
+  }
+
+  .entry-title {
+    font-size: 1.2rem;
+  }
+}
