@@ -39,6 +39,7 @@ export default [
       "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
   },
   {
+    id: 4,
     img: { src: "./src/Images/Pyramid.png", alt: "Egypt" },
     country: "Egypt",
     location:
@@ -49,6 +50,7 @@ export default [
       "The Great Pyramid of Giza is the largest of the three pyramids at Giza. The other two pyramids are the Pyramid of Khafre and the Pyramid of Menkaure.The pyramids were built during the Fourth Dynasty of ancient Egypt, between around 2600–2500 BC.The pyramids are often considered one of the Seven Wonders of the World.The Great Pyramid of Giza was built by Khufu (Cheops), the second king of Egypt's 4th dynasty.",
   },
   {
+    id: 5,
     img: {
       src: "./src/Images/Taj-Mahal.png",
       alt: "Taj Mahal",
@@ -63,6 +65,7 @@ export default [
       "The Taj Mahal stands in the city of Agra. Emperor Shah Jahan built this white marble masterpiece in memory of his deceased wife Mumtaz Mahal. It symbolizes eternal love. It serves as evidence of the thoroughness and skill of Mughal architecture and masters.",
   },
   {
+    id: 6,
     img: {
       src: "./src/images/Mt-everest.png",
       alt: "Mt Everest",
