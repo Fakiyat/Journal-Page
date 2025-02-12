@@ -1,5 +1,5 @@
 function Entry(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <article className="journal-entry">
       <div className="main-image-containor">
@@ -15,9 +15,9 @@ function Entry(props) {
         <a href={props.loaction} rel="loacation" className="location">
           View on Goolge Maps
         </a>
-        <h2 className="entry-title"> {props.entry_title}</h2>
-        <p className="trip-dates">{props.trip_date}</p>
-        <p className="entry-text">{props.entry_text}</p>
+        <h2 className="entry-title"> {props.title}</h2>
+        <p className="trip-dates">{props.date}</p>
+        <p className="entry-text">{props.text}</p>
       </div>
     </article>
   );
