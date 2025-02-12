@@ -1,8 +1,4 @@
-# React + Vite
+# Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3> Added Light and Dark theme</h3>
+<p> You can change it, I have made one component or you can say a card box for one item and the i used props for reusing it in other boxes</p>
