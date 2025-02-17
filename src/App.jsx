@@ -5,17 +5,7 @@ import data from "./data";
 
 function App() {
   const dataElement = data.map((entry) => {
-    return (
-      <Entry
-        key={entry.id}
-        img={{ src: entry.img.src, alt: entry.img.alt }}
-        title={entry.entry_title}
-        country={entry.country}
-        loaction={entry.location}
-        date={entry.entry_date}
-        text={entry.entry_text}
-      />
-    );
+    return <Entry key={entry.id} entry={entry} />;
   });
   return (
     <main>

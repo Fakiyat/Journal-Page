@@ -3,7 +3,11 @@ function Entry(props) {
   return (
     <article className="journal-entry">
       <div className="main-image-containor">
-        <img className="main-image" src={props.img.src} alt={props.img.alt} />
+        <img
+          className="main-image"
+          src={props.entry.img.src}
+          alt={props.entry.img.alt}
+        />
       </div>
       <div className="info-containor">
         <img
@@ -11,13 +15,13 @@ function Entry(props) {
           rel="map-marker-icon"
           className="marker"
         />
-        <span className="country">{props.country}</span>
-        <a href={props.loaction} rel="loacation" className="location">
+        <span className="country">{props.entry.country}</span>
+        <a href={props.entry.loaction} rel="loacation" className="location">
           View on Goolge Maps
         </a>
-        <h2 className="entry-title"> {props.title}</h2>
-        <p className="trip-dates">{props.date}</p>
-        <p className="entry-text">{props.text}</p>
+        <h2 className="entry-title"> {props.entry.entry_title}</h2>
+        <p className="trip-dates">{props.entry.trip_date}</p>
+        <p className="entry-text">{props.entry.entry_text}</p>
       </div>
     </article>
   );
